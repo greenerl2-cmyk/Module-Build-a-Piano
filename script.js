@@ -6,15 +6,10 @@ keys.forEach((key) => {
   key.addEventListener('click', () => playNote(key));
 });
 
+
+
+//--Handlers--//
 function playNote(key) {
   const noteAudio = document.getElementById(key.dataset.note);
   noteAudio.play();
-}
-
-//--Handlers--//
-
-function playNote (key){
-    const noteAudio = document.getElementById(key.dataset.note);
-    console.log(noteAudio);
-    noteAudio.play();
 }
