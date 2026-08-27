@@ -7,8 +7,17 @@ keys.forEach((key)=> {
 
 });
 
+
 //handlers
 function playNote(key){
+  //Get the notes value
     const noteAudio = document.getElementById(key.dataset.note);
+    
+    //Reset the note's current time to 0
+    noteAudio.currentTime = 0;
+    //Play the note
     noteAudio.play();
-}s
+
+//add a class, active, for styling purposes
+key.classList.add("active");
+}
