@@ -20,4 +20,10 @@ function playNote(key){
 
 //add a class, active, for styling purposes
 key.classList.add("active");
+
+
+ //Listen for when the sound has ended and remove active class
+noteAudio.addEventListener('ended', () => {
+  key.classList.remove("active");
+} )
 }

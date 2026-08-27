@@ -42,3 +42,10 @@ body {
   margin-right: -30px;
   z-index: 2;
 }
+
+.white.active {
+  background-color: rgb(34, 221, 224);
+}
+.black.active {
+    background-color: #333;
+}
