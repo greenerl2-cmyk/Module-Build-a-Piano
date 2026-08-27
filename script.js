@@ -9,6 +9,7 @@ keys.forEach((key)=> {
 
 //handlers
 function playNote(key){
-    const noteAudio = document.getElementbyId(key.dataset.note);
+    const noteAudio = document.getElementById(key.dataset.note);
     noteAudio.play();
 }
+
