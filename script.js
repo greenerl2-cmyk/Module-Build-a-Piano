@@ -1,1 +1,14 @@
 const keys = document.querySelectorAll(".key");
+
+
+//add an event listener to all keys
+keys.forEach((key)=> {
+  key.addEventListener('click', () => playNote(key));
+
+});
+
+//handlers
+function playNote(key){
+    const noteAudio = document.getElementbyId(key.dataset.note);
+    noteAudio.play();
+}
